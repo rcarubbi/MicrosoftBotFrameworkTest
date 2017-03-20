@@ -1,0 +1,60 @@
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll.config
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.pdb
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Autofac.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.Attributes.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.IO.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.JSON.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Chronic.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Messaging.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Speech.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Builder.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Connector.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Net.Http.Formatting.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.WebHost.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Autofac.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.Attributes.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.IO.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.JSON.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Speech.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Builder.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Connector.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Net.Http.Formatting.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.WebHost.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.pdb
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\WorkshopAtentoBot.csprojResolveAssemblyReference.cache
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Vorbis.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NVorbis.dll
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Vorbis.xml
+C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NVorbis.xml
