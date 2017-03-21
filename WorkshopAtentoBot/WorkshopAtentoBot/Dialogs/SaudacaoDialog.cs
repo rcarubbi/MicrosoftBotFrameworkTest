@@ -1,23 +1,28 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
+using System;
+using System.Threading.Tasks;
 
 namespace WorkshopAtentoBot.Dialogs
 {
     [Serializable]
     public class SaudacaoDialog : IDialog
     {
+        [NonSerialized]
+        private RespostaHelper _resposta;
+
+        public SaudacaoDialog(OutputType type)
+        {
+          _resposta = new RespostaHelper(type);
+        }
+
         public async Task StartAsync(IDialogContext context)
         {
-            await context.PostAsync("Olá, eu sou Luis!");
             await Respond(context);
-
             context.Wait(MessageReceiveAsync);
         }
+
+
 
         private async Task Respond(IDialogContext context)
         {
@@ -25,12 +30,12 @@ namespace WorkshopAtentoBot.Dialogs
             context.UserData.TryGetValue<string>("Name", out userName);
             if (string.IsNullOrEmpty(userName))
             {
-                await context.PostAsync("Qual o seu nome?");
+                await _resposta.Responder(context, "Olá, eu sou Luis! Qual o seu nome?");
                 context.UserData.SetValue<bool>("GetName", true);
             }
             else
             {
-                await context.PostAsync($"Olá {userName}.  Como posso te ajudar hoje?");
+                await _resposta.Responder(context, $"Olá {userName}. Como posso te ajudar hoje?");
             }
         }
 
@@ -49,9 +54,10 @@ namespace WorkshopAtentoBot.Dialogs
                 context.UserData.SetValue<bool>("GetName", false);
             }
 
-
             await Respond(context);
             context.Done(message);
         }
     }
+
+
 }

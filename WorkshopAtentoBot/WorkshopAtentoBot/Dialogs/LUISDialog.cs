@@ -11,29 +11,34 @@ namespace WorkshopAtentoBot.Dialogs
     [Serializable]
     public class LUISDialog : LuisDialog<Pergunta>
     {
-        private Pergunta _pergutna;
-        public LUISDialog(Pergunta pergunta)
+        private Pergunta _pergunta;
+
+        [NonSerialized]
+        private RespostaHelper _resposta;
+
+        public LUISDialog(Pergunta pergunta, OutputType type)
         {
-            _pergutna = pergunta;
+            _pergunta = pergunta;
+            _resposta = new RespostaHelper(type);
         }
 
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Desculpe, eu não entendi o que você disse. Poderia Repetir?");
+            await _resposta.Responder(context, "Desculpe, eu não entendi o que você disse. Poderia Repetir?");
             context.Wait(MessageReceived);
         }
 
         [LuisIntent("Saudacao")]
         public async Task Saudacao(IDialogContext context, LuisResult result)
         {
-            context.Call(new SaudacaoDialog(), Callback);
+            context.Call(new SaudacaoDialog(_resposta.Type), Callback);
         }
 
         [LuisIntent("PresidenteAtento")]
         public async Task PresidenteAtento(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("O presidente da atento no Brasil é Mário Câmara.");
+            await _resposta.Responder(context, "O presidente da Atento no Brasil é Mário Câmara.");
             context.Wait(MessageReceived);
         }
 

@@ -14,12 +14,15 @@ namespace WorkshopAtentoBot
     [BotAuthentication]
     public class MessagesController : ApiController
     {
+
+        private OutputType _type = OutputType.Text;
         /// <summary>
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
+          
             if (activity.Type == ActivityTypes.Message)
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
@@ -27,9 +30,10 @@ namespace WorkshopAtentoBot
                 if (activity.Attachments != null && activity.Attachments.Count > 0)
                 {
                     activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
+                    _type = OutputType.Speech;
                 }
                 
-                await Conversation.SendAsync(activity, MaleLuisDialog);
+                await Conversation.SendAsync(activity, MakeLuisDialog);
             }
             else
             {
@@ -39,9 +43,9 @@ namespace WorkshopAtentoBot
             return response;
         }
 
-        private IDialog<Pergunta> MaleLuisDialog()
+        private IDialog<Pergunta> MakeLuisDialog()
         {
-            return Chain.From(() => new LUISDialog(new Pergunta()));
+            return Chain.From(() => new LUISDialog(new Pergunta(), _type));
         }
 
         private Activity HandleSystemMessage(Activity message)
