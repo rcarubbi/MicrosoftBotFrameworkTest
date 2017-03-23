@@ -157,12 +157,16 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialogs\IRespostaHelper.cs" />
+    <Compile Include="Dialogs\MudarNomeDialog.cs" />
     <Compile Include="Dialogs\OutputType.cs" />
     <Compile Include="Dialogs\RespostaHelper.cs" />
     <Compile Include="Models\Pergunta.cs" />
+    <Compile Include="ServiceResolver.cs" />
     <Compile Include="Services\Authentication.cs" />
     <Compile Include="Services\CognitiveServicesAuthorizationProvider.cs" />
     <Compile Include="Services\ConvertionJob.cs" />
+    <Compile Include="Services\WavToOggConverter.cs" />
     <Compile Include="Services\OgaToWavConverter.cs" />
     <Compile Include="Services\OutputJob.cs" />
     <Compile Include="Services\ReconhecimentoService.cs" />

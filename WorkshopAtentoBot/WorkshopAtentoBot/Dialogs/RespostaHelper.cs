@@ -1,43 +1,43 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using WorkshopAtentoBot.Services;
 
 namespace WorkshopAtentoBot.Dialogs
 {
  
-   
-    public class RespostaHelper
+    
+    public class RespostaHelper : IRespostaHelper
     {
-        private OutputType _type;
-
-        public OutputType Type
-        {
-            get
-            {
-                return _type;
-            }
-        }
-
-        public RespostaHelper(OutputType type)
-        {
-            _type = type;
-        }
-
-        public async Task Responder(IDialogContext context, string text)
+     
+        public async Task Responder(Activity message, IDialogContext context, string text, string nome = "Resposta")
         {
 
-            if (_type == OutputType.Text)
+            bool spokenAnswer = true;
+            context.UserData.TryGetValue<bool>("spokenAnswer", out spokenAnswer);
+
+
+
+            if (!spokenAnswer)
             {
                 await context.PostAsync(text);
             }
             else
             {
-                var answer = Activity.CreateMessageActivity();
-
-                answer.Attachments.Add(new Attachment { Content = await SintetizadorVozService.Dizer(text), ContentType = "audio/wav" });
+               
+                var wavData = await SintetizadorVozService.Dizer(text);
+              
+                // var conv = new WavToOggConverter();
+                // var oggData = await conv.Convert(wavData);
+                 var answer  = context.MakeMessage();
+                
+               
+                answer.Attachments = new List<Attachment>();
+                answer.Attachments.Add(new Attachment { Content = wavData, ContentType = "audio/wav", Name = nome});
                 await context.PostAsync(answer);
+               
             }
         }
     }

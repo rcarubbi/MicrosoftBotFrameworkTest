@@ -8,5 +8,7 @@ namespace WorkshopAtentoBot.Services
     public class StatusJob
     {
         public Status Status { get; set; }
+
+        public string Server { get; set; }
     }
 }

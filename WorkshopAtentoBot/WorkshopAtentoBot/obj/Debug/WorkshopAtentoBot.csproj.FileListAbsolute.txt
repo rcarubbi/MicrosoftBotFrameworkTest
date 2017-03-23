@@ -113,3 +113,4 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.pdb
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\WorkshopAtentoBot.csprojResolveAssemblyReference.cache

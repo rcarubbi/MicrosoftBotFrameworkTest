@@ -51,7 +51,7 @@ namespace WorkshopAtentoBot.Services
         {
             var request = new RestRequest(method);
             request.AddHeader("cache-control", "no-cache");
-            request.AddHeader("x-oc-api-key", "a7b931bf236efc223594c79520f35a11");
+            request.AddHeader("x-oc-api-key", "70c45eaa48166d299106d6e163340a13");
             return request;
         }
 
@@ -60,7 +60,7 @@ namespace WorkshopAtentoBot.Services
             if (sufixo.Length > 0)
                 sufixo = "/" + sufixo;
 
-         //   var proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
+        //    var proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
             var client = new RestClient("http://api2.online-convert.com/jobs" + sufixo);
           //  client.Proxy = proxy;
             return client;

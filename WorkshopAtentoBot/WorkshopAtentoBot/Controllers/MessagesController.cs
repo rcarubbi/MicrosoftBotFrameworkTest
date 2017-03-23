@@ -6,7 +6,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using WorkshopAtentoBot.Dialogs;
-using WorkshopAtentoBot.Models;
 using WorkshopAtentoBot.Services;
 
 namespace WorkshopAtentoBot
@@ -14,38 +13,66 @@ namespace WorkshopAtentoBot
     [BotAuthentication]
     public class MessagesController : ApiController
     {
-
-        private OutputType _type = OutputType.Text;
+         
+       
         /// <summary>
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
-          
-            if (activity.Type == ActivityTypes.Message)
+            try
+            {
+                if (activity.Type == ActivityTypes.Message)
+                {
+
+                    StateClient stateClient = activity.GetStateClient();
+               
+                    BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
+                    
+
+                    ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+                  
+                    if (activity.Attachments != null && activity.Attachments.Count > 0)
+                    {
+                        userData.SetProperty<bool>("spokenAnswer", true);
+                        activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
+                    }
+                    else
+                    {
+                        userData.SetProperty<bool>("spokenAnswer", false);
+                    }
+                    await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
+                    stateClient.Dispose();
+                    stateClient = null;
+
+
+                    await Conversation.SendAsync(activity, MakeLuisDialog);
+                }
+                else
+                {
+                    HandleSystemMessage(activity);
+                }
+              
+            }
+            catch (Exception ex)
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                
-                if (activity.Attachments != null && activity.Attachments.Count > 0)
-                {
-                    activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
-                    _type = OutputType.Speech;
-                }
-                
-                await Conversation.SendAsync(activity, MakeLuisDialog);
-            }
-            else
-            {
-                HandleSystemMessage(activity);
+                Activity reply = activity.CreateReply(ex.Message);
+                await connector.Conversations.ReplyToActivityAsync(reply);
+
+             
+                    Activity reply2 = activity.CreateReply(ex.StackTrace);
+                    await connector.Conversations.ReplyToActivityAsync(reply2);
+               
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }
 
-        private IDialog<Pergunta> MakeLuisDialog()
+        private IDialog<object> MakeLuisDialog()
         {
-            return Chain.From(() => new LUISDialog(new Pergunta(), _type));
+            return Chain.From(() => new LUISDialog());
         }
 
         private Activity HandleSystemMessage(Activity message)

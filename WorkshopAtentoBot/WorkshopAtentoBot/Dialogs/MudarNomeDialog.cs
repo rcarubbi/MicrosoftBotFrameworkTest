@@ -6,41 +6,43 @@ using System.Threading.Tasks;
 namespace WorkshopAtentoBot.Dialogs
 {
     [Serializable]
-    public class SaudacaoDialog : IDialog
+    public class MudarNomeDialog : IDialog
     {
         [field: NonSerialized()]
         protected Activity _message;
 
         private static readonly IRespostaHelper _respostaHelper = ServiceResolver.Get<IRespostaHelper>();
 
-        public SaudacaoDialog()
+        public MudarNomeDialog()
         {
 
         }
 
-        public SaudacaoDialog(Activity message)
+        public MudarNomeDialog(Activity message)
         {
             _message = message;
         }
 
         public async Task StartAsync(IDialogContext context)
         {
+             
             await Respond(context);
             context.Wait(MessageReceiveAsync);
         }
- 
+
         private async Task Respond(IDialogContext context)
         {
-            var userName = String.Empty;
-            context.UserData.TryGetValue<string>("Name", out userName);
-            if (string.IsNullOrEmpty(userName))
+            var novoNome = String.Empty;
+            context.UserData.TryGetValue<string>("NovoNome", out novoNome);
+            if (string.IsNullOrEmpty(novoNome))
             {
-                await _respostaHelper.Responder(_message, context, "Olá, eu sou Luis! Qual o seu nome?");
+                await _respostaHelper.Responder(_message, context, "Como você quer que eu te chame?");
                 context.UserData.SetValue<bool>("GetName", true);
             }
             else
             {
-                await _respostaHelper.Responder(_message, context, $"Olá {userName}. Como posso te ajudar hoje?");
+                await _respostaHelper.Responder(_message, context, $"A partir de agora te chamarei de {novoNome}.");
+                context.UserData.SetValue<string>("NovoNome", string.Empty);
             }
         }
 
@@ -56,6 +58,7 @@ namespace WorkshopAtentoBot.Dialogs
             {
                 userName = message.Text;
                 context.UserData.SetValue<string>("Name", userName);
+                context.UserData.SetValue<string>("NovoNome", userName);
                 context.UserData.SetValue<bool>("GetName", false);
             }
 
@@ -63,6 +66,4 @@ namespace WorkshopAtentoBot.Dialogs
             context.Done(message);
         }
     }
-
-
 }

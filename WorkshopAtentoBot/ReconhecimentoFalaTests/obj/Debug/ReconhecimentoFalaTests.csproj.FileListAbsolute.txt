@@ -23,7 +23,6 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Reco
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.VisualStudio.Threading.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.VisualStudio.Validation.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bot Application1.pdb
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.Web.Http.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bot.Connector.xml
