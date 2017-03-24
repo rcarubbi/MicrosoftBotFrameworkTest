@@ -12,15 +12,15 @@ namespace WorkshopAtentoBot.Services
 
         public OgaToWavConverter()
         {
-           
+
         }
 
-        
+
 
         public async Task<Stream> Convert(string url)
         {
-          
-          
+
+
             var client = MakeClient(string.Empty);
             var postRequest = MakeRequest(Method.POST);
             postRequest.AddParameter("application/json", "{\"input\":[{\"type\":\"remote\",\"source\":\"" + url + "\"}],\"conversion\":[{\"category\":\"audio\",\"target\":\"wav\"}]}", ParameterType.RequestBody);
@@ -42,7 +42,7 @@ namespace WorkshopAtentoBot.Services
             var outputResponse = await client.ExecuteTaskAsync<List<OutputJob>>(getRequest);
 
             var webClient = new WebClient();
-           // webClient.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
+            // webClient.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
             var data = await webClient.DownloadDataTaskAsync(outputResponse.Data[0].Uri);
 
             return new MemoryStream(data);
@@ -52,10 +52,9 @@ namespace WorkshopAtentoBot.Services
         {
             var request = new RestRequest(method);
             request.AddHeader("cache-control", "no-cache");
-             request.AddHeader("x-oc-api-key", "70c45eaa48166d299106d6e163340a13");
-            //request.AddHeader("x-oc-api-key", "a7b931bf236efc223594c79520f35a11");
-            //request.AddHeader("x-oc-api-key", "47318a555c2b54937a14dcbba6bf1890");
-            
+            request.AddHeader("x-oc-api-key", "8a8902cdd8b4a998358d885d3e3ea162");
+
+
             return request;
         }
 
@@ -64,9 +63,9 @@ namespace WorkshopAtentoBot.Services
             if (sufixo.Length > 0)
                 sufixo = "/" + sufixo;
 
-        //    var proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
+            //    var proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
             var client = new RestClient("http://api2.online-convert.com/jobs" + sufixo);
-          //  client.Proxy = proxy;
+            //  client.Proxy = proxy;
             return client;
         }
     }

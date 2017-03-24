@@ -120,7 +120,14 @@ namespace WorkshopAtentoBot.Dialogs
         {
            var regiao = result.Entities.FirstOrDefault()?.Entity ?? "";
 
-           await _respostaHelper.Responder(context, $"Voce quer saber o diretor regional da região: {regiao}", result.Query);
+            if (regiao.ToLower() == "brasil")
+            {
+                await _respostaHelper.Responder(context, $"Mário Câmara é o diretor regional do Brasil. E você, conhece o Mário?", result.Query);
+            }
+            else if (regiao.ToLower() == "américa")
+            {
+                await _respostaHelper.Responder(context, $"Miguel Matey Marañon é o diretor Regional para a América do Norte.", result.Query);
+            }
            context.Wait(MessageReceived);
         }
 
