@@ -1,11 +1,9 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
-using Microsoft.Bot.Connector;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using WorkshopAtentoBot.Models;
 
 namespace WorkshopAtentoBot.Dialogs
 {
