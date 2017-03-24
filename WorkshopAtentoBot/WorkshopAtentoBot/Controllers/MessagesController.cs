@@ -37,8 +37,7 @@ namespace WorkshopAtentoBot
                     {           
                         userData.SetProperty<bool>("spokenAnswer", true);
                         activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
-                        Activity reply = activity.CreateReply($"link: {activity.Attachments[0].ContentUrl}");
-                        await connector.Conversations.ReplyToActivityAsync(reply);
+                         
                     }
                     else
                     {
