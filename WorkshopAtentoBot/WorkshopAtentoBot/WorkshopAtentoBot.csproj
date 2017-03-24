@@ -175,7 +175,6 @@
     <Compile Include="Dialogs\MudarNomeDialog.cs" />
     <Compile Include="Dialogs\OutputType.cs" />
     <Compile Include="Dialogs\RespostaHelper.cs" />
-    <Compile Include="Models\Pergunta.cs" />
     <Compile Include="ServiceResolver.cs" />
     <Compile Include="Services\Authentication.cs" />
     <Compile Include="Services\CognitiveServicesAuthorizationProvider.cs" />
@@ -203,6 +202,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

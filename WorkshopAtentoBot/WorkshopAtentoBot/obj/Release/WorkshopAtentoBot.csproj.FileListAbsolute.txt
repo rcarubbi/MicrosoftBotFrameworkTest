@@ -119,3 +119,5 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Lame.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\bin\libmp3lame.32.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\bin\libmp3lame.64.dll

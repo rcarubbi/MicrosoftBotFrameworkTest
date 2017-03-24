@@ -24,7 +24,7 @@ namespace WorkshopAtentoBot.Services
 
             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(uri);
             string ImpressionGUID = Guid.NewGuid().ToString();
-            webRequest.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
+          //  webRequest.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
 
             webRequest.ContentType = "application/ssml+xml";
             webRequest.UserAgent = "SintetizadorVozService";

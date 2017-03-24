@@ -76,7 +76,7 @@ namespace WorkshopAtentoBot.Services
             // Prepare OAuth request 
             WebRequest webRequest = WebRequest.Create(accessUri);
             webRequest.Method = "POST";
-            webRequest.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
+           // webRequest.Proxy = new WebProxy("http://proxycorpplus.atento.br:6666", true, new string[] { }, new NetworkCredential(@"atentobr\ab1177493", "Raphakf@02"));
 
             webRequest.ContentLength = 0;
             webRequest.Headers["Ocp-Apim-Subscription-Key"] = apiKey;

@@ -26,13 +26,13 @@ namespace WorkshopAtentoBot.Dialogs
             {
                 var wavData = await SintetizadorVozService.Dizer(text);
               
-                var conv = new WavToMp3Converter();
-                var mp3Data = await conv.ConvertWavToMp3(wavData);
+              //  var conv = new WavToMp3Converter();
+              //  var mp3Data = await conv.ConvertWavToMp3(wavData);
                 var answer  = context.MakeMessage();
 
                  
                 answer.Attachments = new List<Attachment>();
-                answer.Attachments.Add(new Attachment { Content = mp3Data, ContentType = "audio/mp3", Name = nome});
+                answer.Attachments.Add(new Attachment { Content = wavData, ContentType = "audio/wav", Name = nome});
                 await context.PostAsync(answer, CancellationToken.None);
                
             }
