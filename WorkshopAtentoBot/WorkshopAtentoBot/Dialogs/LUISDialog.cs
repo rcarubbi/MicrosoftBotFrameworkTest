@@ -118,17 +118,32 @@ namespace WorkshopAtentoBot.Dialogs
         [LuisIntent("DiretorRegional")]
         public async Task DiretorRegional(IDialogContext context, LuisResult result)
         {
-           var regiao = result.Entities.FirstOrDefault()?.Entity ?? "";
+          
+            EntityRecommendation sufixo, regiao;
+            result.TryFindEntity("nomeregiao", out regiao);
+            result.TryFindEntity("sufixonomeregiao", out sufixo);
 
-            if (regiao.ToLower() == "brasil")
+            if (regiao.Entity?.ToLower() == "brasil")
             {
                 await _respostaHelper.Responder(context, $"Mário Câmara é o diretor regional do Brasil. E você, conhece o Mário?", result.Query);
             }
-            else if (regiao.ToLower() == "américa")
+            else if (regiao.Entity?.ToLower() == "américa" && sufixo.Entity?.ToLower() == "norte")
             {
                 await _respostaHelper.Responder(context, $"Miguel Matey Marañon é o diretor Regional para a América do Norte.", result.Query);
             }
-           context.Wait(MessageReceived);
+            else if (regiao.Entity?.ToLower() == "américa" && sufixo.Entity?.ToLower() == "sul")
+            {
+                await _respostaHelper.Responder(context, $"Juan Gamé é o diretor regional para a América do Sul.", result.Query);
+            }
+            else if (regiao.Entity?.ToLower() == "europa" || regiao.Entity?.ToLower() == "oriente" || regiao.Entity?.ToLower() == "áfrica")
+            {
+                await _respostaHelper.Responder(context, $"José María Pérez Melber é o diretor regional para a EMEA.", result.Query);
+            }
+            else
+            {
+                await _respostaHelper.Responder(context, "Desculpe, eu não entendi o que você disse. Pode Repetir?", result.Query);
+            }
+            context.Wait(MessageReceived);
         }
 
         [LuisIntent("Empregados")]
@@ -239,9 +254,62 @@ namespace WorkshopAtentoBot.Dialogs
         [LuisIntent("Portifolio")]
         public async Task Portifolio(IDialogContext context, LuisResult result)
         {
-            var portifolioNome = result.Entities.FirstOrDefault()?.Entity ?? "";
+            EntityRecommendation nomeportifolio;
+            result.TryFindEntity("nomeportifolio", out nomeportifolio);
 
-            await _respostaHelper.Responder(context, $"Voce quer saber sobre a opção de portifolio: {portifolioNome}", result.Query);
+            if (nomeportifolio.Entity?.ToLower() == "vendas")
+            {
+                await _respostaHelper.Responder(context, $"Solução completa da Atento para atender a todos os processos de vendas das empresas – desde a identificação de consumidores potenciais até o pós-vendas.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "b2b")
+            {
+                await _respostaHelper.Responder(context, $"Apoia as empresas na definição das estratégias de venda, canais de relacionamento e gestão de carteiras de clientes, gerando melhores resultados e performance.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "customer")
+            {
+                await _respostaHelper.Responder(context, $"Solução desenvolvida para gerenciar a jornada completa do atendimento ao consumidor, fornecendo informações e respondendo às sugestões, solicitações e reclamações relacionadas a produtos e serviços.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "suporte")
+            {
+                await _respostaHelper.Responder(context, $"Solução para gestão centralizada, diagnóstico e resolução remota de incidentes técnicos.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "cobrança")
+            {
+                await _respostaHelper.Responder(context, $"Nossa solução de cobrança recupera o crédito em faixas de atraso avançadas, com estrutura operacional e de inteligência centralizada, por meio de estratégia multicanal, obtendo maior recuperação e menor custo.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "backoffice")
+            {
+                await _respostaHelper.Responder(context, $"A solução de Back Office permite que as empresas priorizem as ações relacionadas ao seu core business, criando uma estrutura de processos para gerenciar com inteligência e eficiência todas as atividades administrativas e de suporte, focando na rentabilidade dos negócios.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "reclamação" || nomeportifolio.Entity?.ToLower() == "reclamações")
+            {
+                await _respostaHelper.Responder(context, $"Temos solução para prevenção e gestão de reclamações e contenciosos em quaisquer instâncias – SAC, Ouvidoria, Órgãos Reguladores, Órgãos de Defesa do Consumidor e Juizado Especial Civil – para empresas de todos os segmentos.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "crédito")
+            {
+                await _respostaHelper.Responder(context, $"Nossa solução de Crédito contempla a análise e concessão de crédito, gerencia a formalização de contratos, oferece vendas e suporte para atendimento aos clientes, bem como a realização de serviços de cobrança.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "pagamento")
+            {
+                await _respostaHelper.Responder(context, $"Atuamos em toda a cadeia de valor de Emissores e Credenciadoras/Adquirentes de cartões, utilizando ferramentas de inteligência e múltiplos canais, para aumentar a rentabilidade da carteira e proporcionar a melhor experiência do consumidor.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "trade")
+            {
+                await _respostaHelper.Responder(context, $"A solução Trade Marketing executa a estratégia das empresas no PDV (Ponto de Venda), de acordo com as características de cada canal e o perfil do comprador, pois se adequa às necessidades das áreas de marketing e vendas.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "multicanalidade")
+            {
+                await _respostaHelper.Responder(context, $"Para suportar todas as soluções, a estratégia de multicanalidade da Atento, oferece a integração de canais e tecnologias, proporcionando a melhor experiência aos clientes.", result.Query);
+            }
+            else if (nomeportifolio.Entity?.ToLower() == "omni")
+            {
+                await _respostaHelper.Responder(context, $"O atendimento unificado permite a identificação do consumidor e de sua solicitação, independente da origem ou mesmo da transição entre os canais, mantendo todo o histórico de interação.", result.Query);
+            }
+            else
+            {
+                await _respostaHelper.Responder(context, "Desculpe, eu não entendi o que você disse. Pode Repetir?", result.Query);
+            }
+            
             context.Wait(MessageReceived);
 
         }
@@ -279,15 +347,162 @@ namespace WorkshopAtentoBot.Dialogs
         [LuisIntent("Site")]
         public async Task Site(IDialogContext context, LuisResult result)
         {
-            var regiaoNome = result.Entities.FirstOrDefault()?.Entity ?? "";
+            EntityRecommendation nomesite, nomesite2, nomesite3;
+            result.TryFindEntity("nomesite", out nomesite);
+            result.TryFindEntity("nomesite", out nomesite2);
+            result.TryFindEntity("nomesite", out nomesite3);
 
-            await _respostaHelper.Responder(context, $"Você quer saber o endereço do site {regiaoNome}.", result.Query);
+            if (nomesite.Entity?.ToLower() == "barra")
+            {
+                await _respostaHelper.Responder(context, $"O site Barra Funda fica na Avenida Antártica, 214, Barra Funda, São Paulo, CEP 01141-060.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "belem")
+            {
+                await _respostaHelper.Responder(context, $"O site Belém fica na Rua Padre Adelino, 550, Belém, São Paulo, CEP 03303-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "belo" || nomesite.Entity?.ToLower() == "bh")
+            {
+                await _respostaHelper.Responder(context, $"O site Belo Horizonte - Prado fica na Rua Jaceguai, 220, Prado, Belo Horizonte, CEP 30410-510.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "casa")
+            {
+                await _respostaHelper.Responder(context, $"O site Casa fica na Avenida Alfredo Egídio de Souza Aranha, 100, Chácara Santo Antonio, São Paulo, CEP 04726-170.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "cidade")
+            {
+                await _respostaHelper.Responder(context, $"O site Cidade Nova fica na Rua Pinto de Azevedo, 105, Cidade Nova, Rio de Janeiro, CEP 20211-445.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "feira")
+            {
+                await _respostaHelper.Responder(context, $"O site Feira de Santana fica na Pça Carlos Bahia, s/n, Centro, Feira de Santana, CEP 44002-772.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "goiania")
+            {
+                await _respostaHelper.Responder(context, $"O site Goiania fica na Rua 136C, 150 - Qd. F44, Setor Sul, Goiânia, CEP 74093-280.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "liberdade")
+            {
+                await _respostaHelper.Responder(context, $"O site Liberdade fica na Rua Barão de Iguape, 110, Liberdade, São Paulo, CEP 01507-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "madureira")
+            {
+                await _respostaHelper.Responder(context, $"O site Madureira fica na Rua João Vicente 187 , adureira, Rio de Janeiro, CEP 21340-020.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "major")
+            {
+                await _respostaHelper.Responder(context, $"O site Major Fonseca fica na Rua Major Fonseca, 21, São Cristóvão , Rio de Janeiro, CEP 20920-040.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "mauá")
+            {
+                await _respostaHelper.Responder(context, $"O site Major Fonseca fica na Rua Major Fonseca, 21, São Cristóvão , Rio de Janeiro, CEP 20920-040.O site Mauá - CT fica na Rua Conselheiro Saraiva, 28, Centro, Rio de Janeiro, CEP 20091-030.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "nova")
+            {
+                await _respostaHelper.Responder(context, $"O site Nova São Paulo fica na Rua Professor Manoelito de Ornellas, 303 - Térreo, 1º,2º,3º, 4º,5º e 8º andares, Chácara Santo Antonio, São Paulo, CEP 04719-040", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "oliveira")
+            {
+                await _respostaHelper.Responder(context, $"O site Oliveira Coutinho fica na Rua José de Oliveira Coutinho, 73, Barra Funda, São Paulo, CEP 01144-020.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "penha")
+            {
+                await _respostaHelper.Responder(context, $"O site Penha fica na Rua Lobo Júnior, 1795, Penha, Rio de Janeiro, 21020-123.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "porto")
+            {
+                await _respostaHelper.Responder(context, $"O site Porto Alegre fica na Avenida Júlio de Castilhos, 505, Centro, Porto Alegre, CEP 90030-131.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "república")
+            {
+                await _respostaHelper.Responder(context, $"O site República fica na Entrada 1 - Praça da República, 295 do 1º ao 10º andar, Entrada 2 - Rua Marques de Itu, 52, Centro, São Paulo, CEP 01223-001.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "ribeirão")
+            {
+                await _respostaHelper.Responder(context, $"O site Ribeirão Preto fica na Rua Antônio Fernandes Figueroa, 1400, Parque Industrial Lagoinha, Ribeirão Preto, CEP 14095-280.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "rocha")
+            {
+                await _respostaHelper.Responder(context, $"O site Rocha Verá fica na Av. das Nações Unidas, 14171 - Ebony Tower 4º Andar, Vila Gertrudes, São Paulo, CEP 04794-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "cabula")
+            {
+                await _respostaHelper.Responder(context, $"O site Cabula fica na Rua Silveira Martins, 1036, Cabula, Salvador, CEP 41150-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "uruguai")
+            {
+                await _respostaHelper.Responder(context, $"O site Uruguai fica na Rua Uruguai, 55 e 56, Uruguai, Salvador, CEP 40450-600.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "santana")
+            {
+                await _respostaHelper.Responder(context, $"O site Santana fica na Rua Voluntários da Pátria, 300, Santana, São Paulo, CEP 02011-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "santo" && nomesite2.Entity?.ToLower() == "andré")
+            {
+                await _respostaHelper.Responder(context, $"O site Santo André fica na Av. Dom Pedro I, 530, Vila América, Santo André, CEP 09110-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "santo" && nomesite2.Entity?.ToLower() == "antônio")
+            {
+                await _respostaHelper.Responder(context, $"O site Santo Antônio fica na Rua Domingos Marchetti, 77, Limão, São Paulo, CEP 02712-150.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "santos")
+            {
+                await _respostaHelper.Responder(context, $"O site Santos fica na Rua Visconde de São Leopoldo, 277, Centro, Santos, CEP 11010-201.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "bento" && nomesite3.Entity?.ToLower() == "dois")
+            {
+                await _respostaHelper.Responder(context, $"O site São Bento 2 fica na Largo São Bento, 64 - 1º andar e sobreloja, Centro, São Paulo, 01029-010.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "bento")
+            {
+                await _respostaHelper.Responder(context, $"O site São Bento fica na Rua Líbero Badaró, 633/641, Centro, São Paulo, 01009-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "bernardo")
+            {
+                await _respostaHelper.Responder(context, $"O site São Bernardo do Campo fica na Rua Wallace Simonsen, 13, Nova Petrópolis, São Bernardo do Campo, CEP 09771-210.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "cristovão")
+            {
+                await _respostaHelper.Responder(context, $"O site São Cristóvão fica na Rua São Luiz Gonzaga, 989, São Cristovão, Rio de Janeiro, CEP 20910-063.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "josé")
+            {
+                await _respostaHelper.Responder(context, $"O site São José dos Campos fica na Av. Andrômeda, 227, Jardim Satélite, São José dos Campos, CEP 12230-000.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "teleporto")
+            {
+                await _respostaHelper.Responder(context, $"O site Teleporto fica na Av. Presidente Vargas, 3131 - 6º, 7º e 18º andares, Cidade Nova, Rio de Janeiro, 20210-030.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "zona")
+            {
+                await _respostaHelper.Responder(context, $"O site Zona Sul fica na Av. das Nações Unidas, 19.847, Vila Almeida, São Paulo, 04730-090.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "guarulhos")
+            {
+                await _respostaHelper.Responder(context, $"O site Guarulhos fica na Av. Guarulhos, 3384, Centro, Guarulhos, SP, 07030-001.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "campo")
+            {
+                await _respostaHelper.Responder(context, $"O site Campo Grande fica na Rua Campo Grande, Lote 8, Campo Grande, RIo de Janeiro, RJ, CEP:23085-360.", result.Query);
+            }
+            else if (nomesite.Entity?.ToLower() == "são" && nomesite2.Entity?.ToLower() == "caetano")
+            {
+                await _respostaHelper.Responder(context, $"O site São Caetano do Sul fica na Rua Serafim Constantino, 100, Centro, Sâo Caetano de Sul, SP 09510-220.", result.Query);
+            }
+            else  
+            {
+                await _respostaHelper.Responder(context, $"Não consegui identificar qual site você deseja saber a localização. Pode repetir?", result.Query);
+            }
+
+
+
+
             context.Wait(MessageReceived);
         }
 
         [LuisIntent("Solucoes")]
         public async Task Solucoes(IDialogContext context, LuisResult result)
         {
+           
             await _respostaHelper.Responder(context, $"A Atento possui soluções completas para vendas, atenção ao cliente, suporte técnico, cobrança e backoffice.", result.Query);
             context.Wait(MessageReceived);
         }
