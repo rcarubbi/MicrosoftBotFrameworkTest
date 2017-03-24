@@ -35,11 +35,11 @@ namespace ReconhecimentoFalaTests
         [TestMethod]
         public async Task ConversaoWavToOgg()
         {
-            var texto = "teste";
+            var texto = "Fazemos com que as empresas obtenham sucesso ao passo que garantimos a melhor experiência para os seus consumidores.";
             var bytes = await WorkshopAtentoBot.Services.SintetizadorVozService.Dizer(texto);
             
-            WavToOggConverter conv = new WavToOggConverter();
-            var output = await conv.Convert(bytes);
+            WavToMp3Converter conv = new WavToMp3Converter();
+            var output = await conv.ConvertWavToMp3(bytes);
 
         }
 

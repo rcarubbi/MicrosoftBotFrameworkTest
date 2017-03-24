@@ -58,6 +58,8 @@ C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NVorbis.
 C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
 C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Vorbis.xml
 C:\Users\AB1177493\Source\Repos\WorkshopAtentoBot\WorkshopAtentoBot\bin\NVorbis.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\libmp3lame.32.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\libmp3lame.64.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll.config
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.pdb
@@ -76,6 +78,8 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Lame.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\RestSharp.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.dll
@@ -96,6 +100,7 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\RestSharp.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.pdb
@@ -113,4 +118,3 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\Bot Application1.pdb
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Debug\WorkshopAtentoBot.csprojResolveAssemblyReference.cache

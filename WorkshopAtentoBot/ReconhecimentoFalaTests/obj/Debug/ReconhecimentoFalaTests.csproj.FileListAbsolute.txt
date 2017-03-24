@@ -1,3 +1,5 @@
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\libmp3lame.32.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\libmp3lame.64.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\ReconhecimentoFalaTests.dll.config
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\ReconhecimentoFalaTests.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\ReconhecimentoFalaTests.pdb
@@ -7,15 +9,17 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Reco
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bot.Connector.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bot.Builder.dll
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\RestSharp.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Autofac.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bing.Speech.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\RestSharp.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\NAudio.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\NAudio.Lame.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.Web.Http.WebHost.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Rest.ClientRuntime.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Chronic.dll
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Autofac.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bond.IO.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bond.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bing.Messaging.dll
@@ -27,8 +31,10 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Reco
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bot.Connector.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bot.Builder.xml
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\RestSharp.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Autofac.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Bing.Speech.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\RestSharp.xml
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\NAudio.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.Rest.ClientRuntime.xml
@@ -36,7 +42,6 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Reco
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.pdb
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.xml
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Autofac.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bond.IO.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bond.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\ReconhecimentoFalaTests\bin\Debug\Bond.Attributes.xml
