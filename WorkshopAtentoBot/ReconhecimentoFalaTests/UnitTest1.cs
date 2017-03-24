@@ -47,7 +47,7 @@ namespace ReconhecimentoFalaTests
         public async Task TTS()
         {
             
-            var texto = "teste";
+            var texto = "Fazemos com que as empresas obtenham sucesso ao passo que garantimos a melhor experiência para os seus consumidores.";
 
             var bytes = await WorkshopAtentoBot.Services.SintetizadorVozService.Dizer(texto);
             Assert.IsTrue(bytes.Length > 0);

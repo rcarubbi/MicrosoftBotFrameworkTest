@@ -13,16 +13,7 @@ namespace WorkshopAtentoBot.Dialogs
 
         private static readonly IRespostaHelper _respostaHelper = ServiceResolver.Get<IRespostaHelper>();
 
-        public MudarNomeDialog()
-        {
-
-        }
-
-        public MudarNomeDialog(Activity message)
-        {
-            _message = message;
-        }
-
+  
         public async Task StartAsync(IDialogContext context)
         {
              
@@ -36,12 +27,12 @@ namespace WorkshopAtentoBot.Dialogs
             context.UserData.TryGetValue<string>("NovoNome", out novoNome);
             if (string.IsNullOrEmpty(novoNome))
             {
-                await _respostaHelper.Responder(_message, context, "Como você quer que eu te chame?");
+                await _respostaHelper.Responder(context, "Como você quer que eu te chame?");
                 context.UserData.SetValue<bool>("GetName", true);
             }
             else
             {
-                await _respostaHelper.Responder(_message, context, $"A partir de agora te chamarei de {novoNome}.");
+                await _respostaHelper.Responder(context, $"A partir de agora te chamarei de {novoNome}.");
                 context.UserData.SetValue<string>("NovoNome", string.Empty);
             }
         }

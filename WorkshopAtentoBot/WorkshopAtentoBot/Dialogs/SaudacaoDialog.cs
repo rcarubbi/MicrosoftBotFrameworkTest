@@ -8,20 +8,11 @@ namespace WorkshopAtentoBot.Dialogs
     [Serializable]
     public class SaudacaoDialog : IDialog
     {
-        [field: NonSerialized()]
-        protected Activity _message;
+      
 
         private static readonly IRespostaHelper _respostaHelper = ServiceResolver.Get<IRespostaHelper>();
 
-        public SaudacaoDialog()
-        {
-
-        }
-
-        public SaudacaoDialog(Activity message)
-        {
-            _message = message;
-        }
+        
 
         public async Task StartAsync(IDialogContext context)
         {
@@ -35,12 +26,12 @@ namespace WorkshopAtentoBot.Dialogs
             context.UserData.TryGetValue<string>("Name", out userName);
             if (string.IsNullOrEmpty(userName))
             {
-                await _respostaHelper.Responder(_message, context, "Olá, eu sou Luis! Qual o seu nome?");
+                await _respostaHelper.Responder(context, "Olá, eu sou Luis! Qual o seu nome?");
                 context.UserData.SetValue<bool>("GetName", true);
             }
             else
             {
-                await _respostaHelper.Responder(_message, context, $"Olá {userName}. Como posso te ajudar hoje?");
+                await _respostaHelper.Responder(context, $"Olá {userName}. Como posso te ajudar hoje?");
             }
         }
 

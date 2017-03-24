@@ -12,7 +12,7 @@ namespace WorkshopAtentoBot.Dialogs
     public class RespostaHelper : IRespostaHelper
     {
      
-        public async Task Responder(Activity message, IDialogContext context, string text, string nome = "Resposta")
+        public async Task Responder(IDialogContext context, string text, string nome = "Resposta")
         {
 
             bool spokenAnswer = true;

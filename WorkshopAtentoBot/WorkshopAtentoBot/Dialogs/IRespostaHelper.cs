@@ -7,6 +7,6 @@ namespace WorkshopAtentoBot.Dialogs
     public interface IRespostaHelper
     {
         
-        Task Responder(Activity message, IDialogContext context, string text, string nome = "Resposta");
+        Task Responder(IDialogContext context, string text, string nome = "Resposta");
     }
 }

@@ -34,9 +34,11 @@ namespace WorkshopAtentoBot
                     ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
                   
                     if (activity.Attachments != null && activity.Attachments.Count > 0)
-                    {
+                    {           
                         userData.SetProperty<bool>("spokenAnswer", true);
                         activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
+                        Activity reply = activity.CreateReply($"Você disse: {activity.Text}");
+                        await connector.Conversations.ReplyToActivityAsync(reply);
                     }
                     else
                     {
