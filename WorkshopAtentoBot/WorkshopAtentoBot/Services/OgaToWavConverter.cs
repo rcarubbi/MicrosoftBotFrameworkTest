@@ -25,10 +25,12 @@ namespace WorkshopAtentoBot.Services
             var postRequest = MakeRequest(Method.POST);
             postRequest.AddParameter("application/json", "{\"input\":[{\"type\":\"remote\",\"source\":\"" + url + "\"}],\"conversion\":[{\"category\":\"audio\",\"target\":\"wav\"}]}", ParameterType.RequestBody);
             IRestResponse<ConvertionJob> postResponse = await client.ExecuteTaskAsync<ConvertionJob>(postRequest);
-            if (postResponse.Data == null) throw new ApplicationException("Serviço de conversão de audio indisponível");
+            if (postResponse.Data == null || string.IsNullOrEmpty(postResponse.Data.Id)) throw new ApplicationException("Serviço de conversão de audio indisponível");
 
             IRestResponse<StatusJob> statusResponse = null;
             var getRequest = MakeRequest(Method.GET);
+
+            
             client = MakeClient(postResponse.Data.Id);
             do
             {
