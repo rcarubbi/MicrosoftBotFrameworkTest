@@ -58,13 +58,13 @@ namespace WorkshopAtentoBot
             }
             catch (Exception ex)
             {
-                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                Activity reply = activity.CreateReply(ex.Message);
-                await connector.Conversations.ReplyToActivityAsync(reply);
+                //ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+                //Activity reply = activity.CreateReply(ex.Message);
+                //await connector.Conversations.ReplyToActivityAsync(reply);
 
              
-                    Activity reply2 = activity.CreateReply(ex.StackTrace);
-                    await connector.Conversations.ReplyToActivityAsync(reply2);
+                //    Activity reply2 = activity.CreateReply(ex.StackTrace);
+                //    await connector.Conversations.ReplyToActivityAsync(reply2);
                
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);

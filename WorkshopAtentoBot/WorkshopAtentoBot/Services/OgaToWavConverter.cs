@@ -25,8 +25,10 @@ namespace WorkshopAtentoBot.Services
             var postRequest = MakeRequest(Method.POST);
             postRequest.AddParameter("application/json", "{\"input\":[{\"type\":\"remote\",\"source\":\"" + url + "\"}],\"conversion\":[{\"category\":\"audio\",\"target\":\"wav\"}]}", ParameterType.RequestBody);
             IRestResponse<ConvertionJob> postResponse = await client.ExecuteTaskAsync<ConvertionJob>(postRequest);
-            if (postResponse.Data == null || string.IsNullOrEmpty(postResponse.Data.Id)) throw new ApplicationException("Serviço de conversão de audio indisponível");
-
+            if (postResponse.Data == null || string.IsNullOrEmpty(postResponse.Data.Id))
+            {
+                throw new ApplicationException("Serviço de conversão de audio indisponível");
+            }
             IRestResponse<StatusJob> statusResponse = null;
             var getRequest = MakeRequest(Method.GET);
 
@@ -55,6 +57,7 @@ namespace WorkshopAtentoBot.Services
             var request = new RestRequest(method);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("x-oc-api-key", "8a8902cdd8b4a998358d885d3e3ea162");
+                                               
 
 
             return request;
