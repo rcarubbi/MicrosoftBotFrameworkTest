@@ -158,10 +158,10 @@
   <ItemGroup>
     <Content Include="default.htm" />
     <Content Include="Global.asax" />
-    <Content Include="libmp3lame.32.dll">
+    <Content Include="Services\lame.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="libmp3lame.64.dll">
+    <Content Include="Services\opusdec.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.config">
@@ -178,10 +178,8 @@
     <Compile Include="ServiceResolver.cs" />
     <Compile Include="Services\Authentication.cs" />
     <Compile Include="Services\CognitiveServicesAuthorizationProvider.cs" />
-    <Compile Include="Services\ConvertionJob.cs" />
     <Compile Include="Services\WavToMp3Converter.cs" />
     <Compile Include="Services\OgaToWavConverter.cs" />
-    <Compile Include="Services\OutputJob.cs" />
     <Compile Include="Services\ReconhecimentoService.cs" />
     <Compile Include="Dialogs\LUISDialog.cs" />
     <Compile Include="Dialogs\SaudacaoDialog.cs" />
@@ -190,8 +188,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SintetizadorVozService.cs" />
-    <Compile Include="Services\Status.cs" />
-    <Compile Include="Services\StatusJob.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

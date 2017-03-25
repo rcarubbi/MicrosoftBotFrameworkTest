@@ -1,5 +1,6 @@
 ﻿using Microsoft.Bing.Speech;
 using System;
+using System.IO;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,14 +10,17 @@ namespace WorkshopAtentoBot.Services
     public class ReconhecimentoService
     {
 
-      
+
         public static async Task<string> ReconhecerFala(string contentUrl)
         {
             RecognitionStatus status = RecognitionStatus.None;
             string stringResult = string.Empty;
             WebClient wc = new WebClient();
             OgaToWavConverter converter = new OgaToWavConverter();
-            var wavData = await converter.Convert(contentUrl);
+             
+
+            var ogaData = await wc.DownloadDataTaskAsync(contentUrl);
+            var wavData = converter.Convert(ogaData);
 
             var preferences = new Preferences("pt-BR",
                 new Uri(@"wss://speech.platform.bing.com/api/service/recognition"),
@@ -41,7 +45,7 @@ namespace WorkshopAtentoBot.Services
                 var deviceMetadata = new DeviceMetadata(DeviceType.Near, DeviceFamily.Unknown, NetworkType.Unknown, OsName.Windows, "10", "IBM", "ThinkCenter");
                 var applicationMetadata = new ApplicationMetadata("WorkshopAtentoBot", "1.0");
                 var requestMetada = new RequestMetadata(Guid.NewGuid(), deviceMetadata, applicationMetadata, "ReconhecimentoFalaService");
-                await speechClient.RecognizeAsync(new SpeechInput(wavData, requestMetada), CancellationToken.None).ConfigureAwait(false);
+                await speechClient.RecognizeAsync(new SpeechInput(new MemoryStream(wavData), requestMetada), CancellationToken.None).ConfigureAwait(false);
             }
 
             while (status == RecognitionStatus.None)
@@ -60,6 +64,6 @@ namespace WorkshopAtentoBot.Services
         }
 
 
-    
+
     }
 }

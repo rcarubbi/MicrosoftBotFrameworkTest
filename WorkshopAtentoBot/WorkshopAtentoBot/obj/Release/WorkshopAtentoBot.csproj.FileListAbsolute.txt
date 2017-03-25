@@ -119,3 +119,64 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Lame.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\WorkshopAtentoBot.csprojResolveAssemblyReference.cache
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\WorkshopAtentoBot.csprojResolveAssemblyReference.cache
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\Bot Application1.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\Bot Application1.pdb
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Services\lame.exe
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Services\opusdec.exe
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll.config
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bot Application1.pdb
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Autofac.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.Attributes.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.IO.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.JSON.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Chronic.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Messaging.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Speech.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Builder.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Connector.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Lame.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\RestSharp.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Net.Http.Formatting.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.WebHost.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Autofac.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.Attributes.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.IO.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Bond.JSON.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bing.Speech.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Builder.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Bot.Connector.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Threading.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.VisualStudio.Validation.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Newtonsoft.Json.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\RestSharp.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Net.Http.Formatting.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\System.Web.Http.WebHost.xml
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll

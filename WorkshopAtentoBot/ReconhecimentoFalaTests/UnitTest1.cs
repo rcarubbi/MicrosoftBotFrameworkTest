@@ -19,29 +19,9 @@ namespace ReconhecimentoFalaTests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
-        public async Task ConversaoOggToWav()
-        {
+      
 
-            var url = "https://bcattachmentsprod.blob.core.windows.net/636258816000000000/HBdjmtt2OrA/file_13.oga";
-
-            OgaToWavConverter conv = new OgaToWavConverter();
-            var output = await conv.Convert(url);
-
-            
-        }
-
-
-        [TestMethod]
-        public async Task ConversaoWavToOgg()
-        {
-            var texto = "Fazemos com que as empresas obtenham sucesso ao passo que garantimos a melhor experiência para os seus consumidores.";
-            var bytes = await WorkshopAtentoBot.Services.SintetizadorVozService.Dizer(texto);
-            
-            WavToMp3Converter conv = new WavToMp3Converter();
-            var output = await conv.ConvertWavToMp3(bytes);
-
-        }
+ 
 
         [TestMethod]
         public async Task TTS()
