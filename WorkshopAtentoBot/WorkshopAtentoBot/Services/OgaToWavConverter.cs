@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Web;
 
 namespace WorkshopAtentoBot.Services
 {
@@ -12,10 +13,10 @@ namespace WorkshopAtentoBot.Services
     {
         public byte[] Convert(byte[] ogaData)
         {
-            var ogaFilename = Path.ChangeExtension(Path.GetTempFileName(), "oga");
+            var ogaFilename = Path.Combine(HttpContext.Current.Server.MapPath("~/bin"), Path.ChangeExtension(Path.GetTempFileName(), "oga"));
             File.WriteAllBytes(ogaFilename, ogaData);
-            var wavFilename = Path.ChangeExtension(Path.GetTempFileName(), "wav");
-            var p = Process.Start("opusdec.exe", $"--rate 16000 {ogaFilename} {wavFilename}");
+            var wavFilename = Path.Combine(HttpContext.Current.Server.MapPath("~/bin"), Path.ChangeExtension(Path.GetTempFileName(), "wav"));
+            var p = Process.Start(Path.Combine(HttpContext.Current.Server.MapPath("~/services"), "opusdec.exe"), $"--rate 16000 {ogaFilename} {wavFilename}");
             p.WaitForExit();
             var output = File.ReadAllBytes(wavFilename);
             File.Delete(ogaFilename);

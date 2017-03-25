@@ -113,8 +113,6 @@ C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Work
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\Bot Application1.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\obj\Release\Bot Application1.pdb
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\libmp3lame.32.dll
-C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\libmp3lame.64.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.Lame.dll
 C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\NAudio.xml
@@ -180,3 +178,5 @@ C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\Worksh
 C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\ja\Microsoft.Bot.Builder.resources.dll
 C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\ru\Microsoft.Bot.Builder.resources.dll
 C:\Users\Raphael\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Services\lame.exe
+C:\Users\AB1177493\Source\Repos\MicrosoftBotFrameworkTest\WorkshopAtentoBot\WorkshopAtentoBot\bin\Services\opusdec.exe
