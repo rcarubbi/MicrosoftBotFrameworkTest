@@ -20,13 +20,16 @@ namespace WorkshopAtentoBot.Dialogs
             context.Wait(MessageReceiveAsync);
         }
 
+
+        
+
         private async Task Respond(IDialogContext context)
         {
             var userName = String.Empty;
             context.UserData.TryGetValue<string>("Name", out userName);
             if (string.IsNullOrEmpty(userName))
             {
-                await _respostaHelper.Responder(context, "Olá, eu sou Luis! Qual o seu nome?");
+                  await _respostaHelper.Responder(context, "Olá, eu sou BDA, o Bot Digital da Atento! Qual o seu nome?");
                 context.UserData.SetValue<bool>("GetName", true);
             }
             else

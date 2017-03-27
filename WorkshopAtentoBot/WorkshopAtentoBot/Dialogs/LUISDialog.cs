@@ -17,8 +17,14 @@ namespace WorkshopAtentoBot.Dialogs
         private static readonly IRespostaHelper _respostaHelper = ServiceResolver.Get<IRespostaHelper>();
 
 
+        [LuisIntent("QuemEhVc")]
+        public async Task QuemEhVc(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, " Sou o agente digital da Atento. Fui criado para demonstrar o uso de linguagem natural no workshop estratégico da Atento. Fui criado pela equipe de Sistemas e Soluções da Atento Brasil.", result.Query);
+            context.Wait(MessageReceived);
+           
+        }
 
-      
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
@@ -199,7 +205,7 @@ namespace WorkshopAtentoBot.Dialogs
         public async Task Gartner(IDialogContext context, LuisResult result)
         {
 
-            await _respostaHelper.Responder(context, $"A Atento foi nomeada a líder no quadrante mágico do Gartner em Customer Management Contact Center BPO.", result.Query);
+            await _respostaHelper.Responder(context, $"A Atento foi nomeada a líder no quadrante mágico do Gartner em Customer management contact center - BPO.", result.Query);
             context.Wait(MessageReceived);
         }
 
@@ -361,6 +367,73 @@ namespace WorkshopAtentoBot.Dialogs
             context.Wait(MessageReceived);
         }
 
+        [LuisIntent("Ajuda")]
+        public async Task Ajuda (IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Para utilizar o Bot do Workshop você pode perguntar sobre diversos assuntos como: endereço de site, quantidade de funcionários, valores, missão e muito mais. Você pode também definir seu nome, basta dizer Quero trocar meu nome. Eu sei responder por texto e por voz, pode usar as duas opções.", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("Time")]
+        public async Task Time(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"O Palmeiras tem mais títulos nacionais, o São Paulo mais Libertadores, o Corinthians mais paulistas... o Santos é o time do avô.", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("DiretorVivo")]
+        public async Task DiretorVivo(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Luis Ricardo Ferreira é o Diretor Executivo de Negócios VIVO da Atento Brasil", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("DiretorEstrategia")]
+        public async Task DiretorEstrategia(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Regis Augusto Noronha é o Diretor Executivo de Estratégia e Soluções da Atento Brasil", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("DiretorFinanceiro")]
+        public async Task DiretorFinanceiro(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Alessandro Piero Porro é o Diretor Executivo de Finanças da Atento Brasil", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+
+
+        [LuisIntent("DiretorTI")]
+        public async Task DiretorTI(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Flavio Henrique Ribeiro é o Diretor Executivo de TI, Infra e CPG da Atento Brasil", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("RHBrasil")]
+        public async Task RHBrasil(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Majo Martinez Campos é a Diretora Executiva de RH da Atento Brasil", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+        [LuisIntent("DiretorBrasil")]
+        public async Task DiretorBrasil(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"Mário Câmara é o Diretor Regional da Atento Brasil.", result.Query);
+            context.Wait(MessageReceived);
+        }
+
+
+
+        [LuisIntent("Piada01")]
+        public async Task Paida01(IDialogContext context, LuisResult result)
+        {
+            await _respostaHelper.Responder(context, $"O homem mais sexy da Atento é o Luis Ricardo, diretor executivo de negócios Telecom.", result.Query);
+            context.Wait(MessageReceived);
+        }
+
         [LuisIntent("Site")]
         public async Task Site(IDialogContext context, LuisResult result)
         {
@@ -376,7 +449,7 @@ namespace WorkshopAtentoBot.Dialogs
             {
                 await _respostaHelper.Responder(context, $"O site Barra Funda fica na Avenida Antártica, 214, Barra Funda, São Paulo, CEP 01141-060.", result.Query);
             }
-            else if (nomesitestr.Contains("belem"))
+            else if (nomesitestr.Contains("belém"))
             {
                 await _respostaHelper.Responder(context, $"O site Belém fica na Rua Padre Adelino, 550, Belém, São Paulo, CEP 03303-000.", result.Query);
             }
@@ -396,7 +469,7 @@ namespace WorkshopAtentoBot.Dialogs
             {
                 await _respostaHelper.Responder(context, $"O site Feira de Santana fica na Pça Carlos Bahia, s/n, Centro, Feira de Santana, CEP 44002-772.", result.Query);
             }
-            else if (nomesitestr.Contains("goiania"))
+            else if (nomesitestr.Contains("goiânia"))
             {
                 await _respostaHelper.Responder(context, $"O site Goiania fica na Rua 136C, 150 - Qd. F44, Setor Sul, Goiânia, CEP 74093-280.", result.Query);
             }
