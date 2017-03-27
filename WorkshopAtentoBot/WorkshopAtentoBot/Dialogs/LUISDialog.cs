@@ -1,13 +1,14 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
+using Microsoft.Bot.Connector;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace WorkshopAtentoBot.Dialogs
 {
-    [LuisModel("ce181128-0512-448e-a9ed-052be93058a9", "4c04858761a6404bbff14d30c2c01d63")]
+    [LuisModel("ce181128-0512-448e-a9ed-052be93058a9", "9b8cc59376504cae8fe2cb67857a8d82")]
     [Serializable]
     public class LUISDialog : LuisDialog<object>
     {
@@ -29,7 +30,18 @@ namespace WorkshopAtentoBot.Dialogs
         [LuisIntent("Saudacao")]
         public async Task Saudacao(IDialogContext context, LuisResult result)
         {
-            context.Call(new SaudacaoDialog(), Callback);
+            var userName = string.Empty;
+            context.UserData.TryGetValue<string>("Name", out userName);
+            if (string.IsNullOrEmpty(userName))
+            {
+                context.Call(new SaudacaoDialog(), Callback);
+            }
+            else
+            {
+                await _respostaHelper.Responder(context, $"Olá {userName}, como posso te ajudar hoje?", result.Query);
+                context.Wait(MessageReceived);
+            }
+         
         }
 
         [LuisIntent("MudarNome")]
@@ -526,6 +538,7 @@ namespace WorkshopAtentoBot.Dialogs
 
         private async Task Callback(IDialogContext context, IAwaitable<object> result)
         {
+            
             context.Wait(MessageReceived);
         }
 
