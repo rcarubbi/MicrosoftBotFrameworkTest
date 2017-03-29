@@ -377,7 +377,7 @@ namespace WorkshopAtentoBot.Dialogs
         [LuisIntent("Time")]
         public async Task Time(IDialogContext context, LuisResult result)
         {
-            await _respostaHelper.Responder(context, $"O Palmeiras tem mais títulos nacionais, o São Paulo mais Libertadores, o Corinthians mais paulistas... o Santos é o time do avô.", result.Query);
+            await _respostaHelper.Responder(context, $"O Palmeiras tem mais títulos nacionais, o São Paulo mais Libertadores, o Corinthians mais paulistas... o Santos é o time do amor.", result.Query);
             context.Wait(MessageReceived);
         }
 
