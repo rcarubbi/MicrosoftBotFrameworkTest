@@ -1,12 +1,5 @@
-﻿using NAudio.Lame;
-using NAudio.Wave;
-using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Net;
-using System.Threading.Tasks;
 using System.Web;
 
 namespace WorkshopAtentoBot.Services

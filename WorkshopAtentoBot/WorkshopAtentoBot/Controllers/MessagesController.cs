@@ -27,26 +27,21 @@ namespace WorkshopAtentoBot
                 {
 
                     StateClient stateClient = activity.GetStateClient();
-               
-                    BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
-                    
-
+                    BotData conversationData = await stateClient.BotState.GetConversationDataAsync(activity.ChannelId, activity.Conversation.Id);
                     ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
                   
                     if (activity.Attachments != null && activity.Attachments.Count > 0)
                     {           
-                        userData.SetProperty<bool>("spokenAnswer", true);
+                        conversationData.SetProperty<bool>("spokenAnswer", true);
                         activity.Text = await ReconhecimentoService.ReconhecerFala(activity.Attachments[0].ContentUrl);
-                         
                     }
                     else
                     {
-                        userData.SetProperty<bool>("spokenAnswer", false);
+                        conversationData.SetProperty<bool>("spokenAnswer", false);
                     }
-                    await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
+                    await stateClient.BotState.SetConversationDataAsync(activity.ChannelId, activity.Conversation.Id, conversationData);
                     stateClient.Dispose();
                     stateClient = null;
-
 
                     await Conversation.SendAsync(activity, MakeLuisDialog);
                 }

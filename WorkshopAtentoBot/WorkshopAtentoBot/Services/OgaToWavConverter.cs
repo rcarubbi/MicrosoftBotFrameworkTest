@@ -1,10 +1,5 @@
-﻿using RestSharp;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Net;
-using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Web;
 
 namespace WorkshopAtentoBot.Services

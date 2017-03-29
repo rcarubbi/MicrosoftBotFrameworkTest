@@ -1,14 +1,12 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
-using Microsoft.Bot.Connector;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace WorkshopAtentoBot.Dialogs
 {
-    [LuisModel("ce181128-0512-448e-a9ed-052be93058a9", "9b8cc59376504cae8fe2cb67857a8d82")]
+    [LuisModel("ce181128-0512-448e-a9ed-052be93058a9", "45f41489bc314933ba7026237f39dfb5")]
     [Serializable]
     public class LUISDialog : LuisDialog<object>
     {
@@ -343,7 +341,6 @@ namespace WorkshopAtentoBot.Dialogs
             await _respostaHelper.Responder(context, $"Em 2016 a Atento recebeu pela 8a. vez o prêmio Amauta em experiência do usuário.", result.Query);
             context.Wait(MessageReceived);
         }
-
 
 
         [LuisIntent("RH")]

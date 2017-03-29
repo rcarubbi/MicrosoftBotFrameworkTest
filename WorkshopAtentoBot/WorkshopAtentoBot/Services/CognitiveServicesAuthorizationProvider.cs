@@ -7,7 +7,7 @@ namespace WorkshopAtentoBot.Services
 {
     public class CognitiveServicesAuthorizationProvider : IAuthorizationProvider
     {
-        public const string API_KEY = "4f5863d0331941888f4e27c119a08094";
+        public const string API_KEY = "ce4a5f59dd4f4194aff8a9005f58ca7d";
 
         /// <summary>
         /// The fetch token URI
